@@ -37,11 +37,11 @@ var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 
-var secondsLeft = 76;
+var secondsLeft = 100;
 
 var holdInterval = 0;
 
-var penalty = 10;
+var penalty = 15;
 
 var ulCreate = document.createElement("ul");
 
@@ -70,7 +70,7 @@ function render(questionIndex) {
     ulCreate.innerHTML = "";
 
     for (var i = 0; i < questions.length; i++) {
-        // Appends question title only
+        
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
